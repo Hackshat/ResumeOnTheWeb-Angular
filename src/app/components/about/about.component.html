@@ -1,0 +1,32 @@
+<section class="about-me-page">
+  <div class="about-me-section">
+    <h1 #title>About Me</h1>
+    <div class="about-me">
+      <p>
+        I’m a Full-Stack Developer located in India. I enjoy building end-to-end solutions, from user-friendly interfaces to scalable backends.
+      </p>
+      <p>
+        I'm excited about the opportunity to contribute
+        to impactful projects and collaborate with talented teams.
+      </p>
+      <p>
+        I'm passionate about continuous learning and growth in the tech industry, and I love tackling both frontend and backend challenges and collaborating on projects 
+        that combine great design with solid backend solutions.
+      </p>
+      <p>
+        <a target="_blank" [href]="linkedin.profileUrl">Let’s collaborate.</a>
+      </p>
+    </div>
+  </div>
+  @if (screenWidth > 768) {
+  <div class="tag-canvas">
+    <div class="canvas-container">
+      <ng-tag-canvas [options]="options">
+        @for (tag of tags; track tag.text) {
+        <a ngTag [weight]="tag.weight">{{ tag.text }}</a>
+        }
+      </ng-tag-canvas>
+    </div>
+  </div>
+  }
+</section>

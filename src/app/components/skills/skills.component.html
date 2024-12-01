@@ -1,0 +1,64 @@
+<header class="header">
+  <h1 #title>Skills and Experience</h1>
+</header>
+<section class="skills-section">
+  <dl class="list tech-skills">
+    <dt>Tech Skills</dt>
+    @for (techSkill of skills.techSkills; track techSkill.id) {
+    <dd>
+      <a>{{ techSkill.name }}</a>
+    </dd>
+    }
+  </dl>
+
+  <dl class="list mgmt-skills">
+    <dt>Management Skills</dt>
+    @for (mgmtSkill of skills.mgmtSkills; track mgmtSkill.id) {
+    <dd>
+      <a>{{ mgmtSkill.name }}</a>
+    </dd>
+    }
+  </dl>
+
+  <dl class="list soft-skills">
+    <dt>Soft Skills</dt>
+    @for (softSkill of skills.softSkills; track softSkill.id) {
+    <dd>
+      <a>{{ softSkill.name }}</a>
+    </dd>
+    }
+  </dl>
+
+  <div class="experience-section" #experience>
+    <p>
+      I started my journey as a trainee full-stack developer in July 2023, and nearly
+      {{ yearsOfExperience }}
+      years later, I’ve gained valuable experience working as an employee on some exciting projects. 
+      I have worked with stock market clients, retail and commerce clients,and more. 
+      I have collaborated with talented teams to create web products for both business and consumer use.
+    </p>
+    <p>
+      I have successfully developed responsive websites that are fast, user-friendly, and adhere to best practices. 
+      I have experience in building large enterprise music apps, 
+      custom features, and interactive layouts. I have also created admin panels and web applications using .NET Core and .NET as backend technologies.
+    </p>
+    <p>
+      In addition to my front-end skills, I am proficient in backend technologies like .NET Core and .NET, 
+      which I have used to build server-side code for various applications. I have worked on notable projects including a stock app and a music app. 
+      I am also familiar with other popular libraries like React.js and have experience with ERP tools like NetSuite. Additionally 
+      <!-- I write a lot of awesome technical content on
+      <a [routerLink]="['/blog-posts']">Medium. </a> -->
+    </p>
+    <p>
+      Visit my
+      <a href="https://in.linkedin.com/in/akshatpattani" target="_blank"
+        >LinkedIn
+      </a>
+      profile for more details.
+    </p>
+  </div>
+
+  <a class="toggle" (click)="toggleExperience()">{{
+    isMakisuOpen ? "Experience" : "Skills"
+  }}</a>
+</section>
