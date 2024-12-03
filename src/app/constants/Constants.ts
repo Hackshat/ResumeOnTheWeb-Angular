@@ -56,7 +56,7 @@ export const SKILLS: ISkills = {
 export const SocialMediaProfiles: ISocialMediaLinks[] = [
   {
     title: 'Facebook',
-    profileUrl: 'https://www.facebook.com/akashkriplani25',
+    profileUrl: 'https://www.facebook.com/akshat.patni.58',
     iconPath: 'assets/images/facebook.svg'
   },
   {
@@ -129,6 +129,3 @@ export const EXPERIENCES: IExperience[] = [
     role: 'Worked as a trainee front end Angular developer and back end .Net Developer'
   }
 ];
-
-// export const MEDIUM_INTEGRATION_URL: string =
-//   'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@akashkriplani';
